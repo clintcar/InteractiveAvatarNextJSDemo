@@ -187,6 +187,15 @@ export const AvatarConfig: React.FC<AvatarConfigProps> = ({
       >
         {showMore ? "Show less" : "Show more..."}
       </button>
+
+      <div
+  aria-label={`Avatar name Agent Vicki`}
+  className="absolute left-2 top-2 z-10 rounded-md bg-black/60 px-3 py-1 text-white font-semibold"
+>
+  Agent Vicki
+</div>
+
+      
     </div>
   );
 };

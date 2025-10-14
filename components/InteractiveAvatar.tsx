@@ -131,7 +131,14 @@ function InteractiveAvatar() {
           ) : (
             <AvatarConfig config={config} onConfigChange={setConfig} />
           )}
+          <div className="absolute top-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-75 text-white px-3 py-1 rounded-md text-sm font-medium">
+            Clint Demo
+          </div>
         </div>
+
+
+
+        
         <div className="flex flex-col gap-3 items-center justify-center p-4 border-t border-zinc-700 w-full">
           {sessionState === StreamingAvatarSessionState.CONNECTED ? (
             <AvatarControls />
