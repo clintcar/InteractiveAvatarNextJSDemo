@@ -132,7 +132,7 @@ function InteractiveAvatar() {
             <AvatarConfig config={config} onConfigChange={setConfig} />
           )}
           <div className="absolute top-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-75 text-white px-3 py-1 rounded-md text-sm font-medium">
-            Clint Demo
+            Clint2 Demo
           </div>
         </div>
 
