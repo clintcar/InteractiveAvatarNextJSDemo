@@ -13,6 +13,17 @@ export const AvatarVideo = forwardRef<HTMLVideoElement>(({}, ref) => {
 
   const isLoaded = sessionState === StreamingAvatarSessionState.CONNECTED;
 
+  const handleClose = async () => {
+    stopAvatar();
+    if (document.fullscreenElement) {
+      try {
+        await document.exitFullscreen();
+      } catch (err) {
+        console.error("Failed to exit fullscreen", err);
+      }
+    }
+  };
+
   return (
     <>
       {connectionQuality !== ConnectionQuality.UNKNOWN && (
@@ -23,6 +34,7 @@ export const AvatarVideo = forwardRef<HTMLVideoElement>(({}, ref) => {
       {isLoaded && (
         <Button
           className="absolute top-3 right-3 !p-2 bg-zinc-700 bg-opacity-50 z-10"
+<<<<<<< HEAD
           onClick={async () => {
             try {
               stopAvatar();
@@ -36,6 +48,9 @@ export const AvatarVideo = forwardRef<HTMLVideoElement>(({}, ref) => {
               }
             }
           }}
+=======
+          onClick={handleClose}
+>>>>>>> cc3632b24c1842018356ce9a299b7cc880bacb40
         >
           <CloseIcon />
         </Button>

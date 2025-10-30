@@ -20,7 +20,11 @@ export const AvatarControls: React.FC = () => {
   return (
     <div className="flex flex-col gap-3 relative w-full items-center">
       <ToggleGroup
+<<<<<<< HEAD
         className={`bg-zinc-100 text-black rounded-lg p-1 ${isVoiceChatLoading ? "opacity-50" : ""}`}
+=======
+        className={`bg-zinc-200 rounded-lg p-1 ${isVoiceChatLoading ? "opacity-50" : ""}`}
+>>>>>>> cc3632b24c1842018356ce9a299b7cc880bacb40
         disabled={isVoiceChatLoading}
         type="single"
         value={isVoiceChatActive || isVoiceChatLoading ? "voice" : "text"}
@@ -37,13 +41,21 @@ export const AvatarControls: React.FC = () => {
         }}
       >
         <ToggleGroupItem
+<<<<<<< HEAD
           className="bg-zinc-100 data-[state=on]:bg-zinc-200 text-black rounded-lg p-2 text-sm w-[90px] text-center"
+=======
+          className="bg-zinc-100 data-[state=on]:bg-zinc-300 data-[state=on]:text-black rounded-lg p-2 text-sm w-[90px] text-center text-black"
+>>>>>>> cc3632b24c1842018356ce9a299b7cc880bacb40
           value="voice"
         >
           Voice Chat
         </ToggleGroupItem>
         <ToggleGroupItem
+<<<<<<< HEAD
           className="bg-zinc-100 data-[state=on]:bg-zinc-200 text-black rounded-lg p-2 text-sm w-[90px] text-center"
+=======
+          className="bg-zinc-100 data-[state=on]:bg-zinc-300 data-[state=on]:text-black rounded-lg p-2 text-sm w-[90px] text-center text-black"
+>>>>>>> cc3632b24c1842018356ce9a299b7cc880bacb40
           value="text"
         >
           Text Chat

@@ -168,7 +168,7 @@ function InteractiveAvatar() {
             María Teresa Fuster
           </div> */}
           <button
-            aria-label="Toggle fullscreen"
+            aria-label="Toggle Full Screen"
             onClick={toggleFullscreen}
             className="absolute bottom-4 right-4 bg-zinc-900 text-white px-3 py-1 rounded-md text-sm"
           >
