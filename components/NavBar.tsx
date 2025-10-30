@@ -9,7 +9,7 @@ export default function NavBar() {
         <div className="flex flex-row items-center gap-4">
           <div>
             <p className="text-xl font-semibold text-black">
-            CU - Office of Medical Education - Medical Spanish
+            CU Anschutz School of Dental Medicine
             </p>
           </div>
         </div>
