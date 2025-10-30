@@ -168,11 +168,11 @@ function InteractiveAvatar() {
             María Teresa Fuster
           </div> */}
           <button
-            aria-label="Toggle fullscreen"
+            aria-label="Toggle Full Screen"
             onClick={toggleFullscreen}
             className="absolute bottom-4 right-4 bg-zinc-900 text-white px-3 py-1 rounded-md text-sm"
           >
-            Fullscreen
+            Full Screen
           </button>
           {sessionState === StreamingAvatarSessionState.CONNECTED && (
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-75 text-white px-4 py-2 rounded-md text-sm font-medium flex items-center gap-2">
